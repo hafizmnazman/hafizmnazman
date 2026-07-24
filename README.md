@@ -7,3 +7,12 @@
     </picture>
   </a>
 </div>
+
+```text
+hafiz@github:~$ ls ~/projects
+ls: cannot open directory '~/projects': permission denied
+
+hafiz@github:~$ cat ~/now
+building: myself
+status:   work in progress · breaking changes daily · no eta
+```
