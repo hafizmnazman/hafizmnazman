@@ -1,0 +1,36 @@
+name: update profile card
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: regenerate card
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "ACCESS_TOKEN secret is not set. Skipping so the card keeps accurate numbers."
+            echo "Add a fine-grained PAT with read access to all repos as the ACCESS_TOKEN secret."
+            exit 0
+          fi
+          python today.py
+
+      - name: commit and push if changed
+        run: |
+          git config user.name "Hafiz Azman"
+          git config user.email "hafizmnazman@gmail.com"
+          git add dark_mode.svg light_mode.svg
+          git diff --cached --quiet || (git commit -m "update stats" && git push)
