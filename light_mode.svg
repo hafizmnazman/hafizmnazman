@@ -51,9 +51,9 @@
 <text class="fg" x="566" y="370" xml:space="preserve"><tspan class="acc" x="460">repos</tspan><tspan x="566">12 public · 19 private</tspan></text>
 <text class="fg" x="566" y="390" xml:space="preserve"><tspan class="acc" x="460">stars</tspan><tspan x="566">2</tspan></text>
 <text class="fg" x="566" y="410" xml:space="preserve"><tspan class="acc" x="460">followers</tspan><tspan x="566">6</tspan></text>
-<text class="fg" x="566" y="430" xml:space="preserve"><tspan class="acc" x="460">commits</tspan><tspan x="566">1,341</tspan></text>
-<text class="fg" x="566" y="450" xml:space="preserve"><tspan class="acc" x="460">lines</tspan><tspan x="566">1,005,009</tspan><tspan class="mut"> (</tspan><tspan class="pos">1.03m++</tspan><tspan class="mut"> · </tspan><tspan class="neg">26.5k--</tspan><tspan class="mut">)</tspan></text>
-<text class="fg" x="566" y="470" xml:space="preserve"><tspan class="acc" x="460">uptime</tspan><tspan x="566">2 yrs 11 mos 1 day</tspan></text>
+<text class="fg" x="566" y="430" xml:space="preserve"><tspan class="acc" x="460">commits</tspan><tspan x="566">1,350</tspan></text>
+<text class="fg" x="566" y="450" xml:space="preserve"><tspan class="acc" x="460">lines</tspan><tspan x="566">1,018,429</tspan><tspan class="mut"> (</tspan><tspan class="pos">1.05m++</tspan><tspan class="mut"> · </tspan><tspan class="neg">26.7k--</tspan><tspan class="mut">)</tspan></text>
+<text class="fg" x="566" y="470" xml:space="preserve"><tspan class="acc" x="460">uptime</tspan><tspan x="566">2 yrs 11 mos 2 days</tspan></text>
 <rect x="460" y="484" width="16" height="10" rx="2" fill="#cf222e"/>
 <rect x="482" y="484" width="16" height="10" rx="2" fill="#bc4c00"/>
 <rect x="504" y="484" width="16" height="10" rx="2" fill="#9a6700"/>
@@ -62,5 +62,5 @@
 <rect x="570" y="484" width="16" height="10" rx="2" fill="#0969da"/>
 <rect x="592" y="484" width="16" height="10" rx="2" fill="#8250df"/>
 <rect x="614" y="484" width="16" height="10" rx="2" fill="#667085"/>
-<text class="mut sm" x="460" y="520">last sync 2026-07-24 · auto-updates daily</text>
+<text class="mut sm" x="460" y="520">last sync 2026-07-25 · auto-updates daily</text>
 </svg>
