@@ -51,9 +51,9 @@
 <text class="fg" x="566" y="370" xml:space="preserve"><tspan class="acc" x="460">repos</tspan><tspan x="566">13 public · 19 private</tspan></text>
 <text class="fg" x="566" y="390" xml:space="preserve"><tspan class="acc" x="460">stars</tspan><tspan x="566">2</tspan></text>
 <text class="fg" x="566" y="410" xml:space="preserve"><tspan class="acc" x="460">followers</tspan><tspan x="566">8</tspan></text>
-<text class="fg" x="566" y="430" xml:space="preserve"><tspan class="acc" x="460">commits</tspan><tspan x="566">1,370</tspan></text>
+<text class="fg" x="566" y="430" xml:space="preserve"><tspan class="acc" x="460">commits</tspan><tspan x="566">1,371</tspan></text>
 <text class="fg" x="566" y="450" xml:space="preserve"><tspan class="acc" x="460">lines</tspan><tspan x="566">1,047,420</tspan><tspan class="mut"> (</tspan><tspan class="pos">1.07m++</tspan><tspan class="mut"> · </tspan><tspan class="neg">27.4k--</tspan><tspan class="mut">)</tspan></text>
-<text class="fg" x="566" y="470" xml:space="preserve"><tspan class="acc" x="460">uptime</tspan><tspan x="566">2 yrs 11 mos 17 days</tspan></text>
+<text class="fg" x="566" y="470" xml:space="preserve"><tspan class="acc" x="460">uptime</tspan><tspan x="566">2 yrs 11 mos 18 days</tspan></text>
 <rect x="460" y="484" width="16" height="10" rx="2" fill="#f85149"/>
 <rect x="482" y="484" width="16" height="10" rx="2" fill="#db6d28"/>
 <rect x="504" y="484" width="16" height="10" rx="2" fill="#d29922"/>
@@ -62,5 +62,5 @@
 <rect x="570" y="484" width="16" height="10" rx="2" fill="#4493f8"/>
 <rect x="592" y="484" width="16" height="10" rx="2" fill="#ab7df8"/>
 <rect x="614" y="484" width="16" height="10" rx="2" fill="#8b949e"/>
-<text class="mut sm" x="460" y="520">last sync 2026-08-09 · auto-updates daily</text>
+<text class="mut sm" x="460" y="520">last sync 2026-08-10 · auto-updates daily</text>
 </svg>
