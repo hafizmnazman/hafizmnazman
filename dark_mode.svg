@@ -51,8 +51,8 @@
 <text class="fg" x="566" y="370" xml:space="preserve"><tspan class="acc" x="460">repos</tspan><tspan x="566">13 public · 19 private</tspan></text>
 <text class="fg" x="566" y="390" xml:space="preserve"><tspan class="acc" x="460">stars</tspan><tspan x="566">2</tspan></text>
 <text class="fg" x="566" y="410" xml:space="preserve"><tspan class="acc" x="460">followers</tspan><tspan x="566">8</tspan></text>
-<text class="fg" x="566" y="430" xml:space="preserve"><tspan class="acc" x="460">commits</tspan><tspan x="566">1,415</tspan></text>
-<text class="fg" x="566" y="450" xml:space="preserve"><tspan class="acc" x="460">lines</tspan><tspan x="566">1,055,273</tspan><tspan class="mut"> (</tspan><tspan class="pos">1.08m++</tspan><tspan class="mut"> · </tspan><tspan class="neg">27.9k--</tspan><tspan class="mut">)</tspan></text>
+<text class="fg" x="566" y="430" xml:space="preserve"><tspan class="acc" x="460">commits</tspan><tspan x="566">1,417</tspan></text>
+<text class="fg" x="566" y="450" xml:space="preserve"><tspan class="acc" x="460">lines</tspan><tspan x="566">1,055,678</tspan><tspan class="mut"> (</tspan><tspan class="pos">1.08m++</tspan><tspan class="mut"> · </tspan><tspan class="neg">27.9k--</tspan><tspan class="mut">)</tspan></text>
 <text class="fg" x="566" y="470" xml:space="preserve"><tspan class="acc" x="460">uptime</tspan><tspan x="566">3 yrs 0 mos 8 days</tspan></text>
 <rect x="460" y="484" width="16" height="10" rx="2" fill="#f85149"/>
 <rect x="482" y="484" width="16" height="10" rx="2" fill="#db6d28"/>
