@@ -39,7 +39,7 @@ status:   work in progress · breaking changes daily · no eta
 
 ### <samp>hafiz@github:~$ cat ~/stack</samp>
 
-<div align="center">
+<p align="center">
   <code># languages</code>
   <br>
   <img src="https://img.shields.io/badge/typescript-161b22?style=for-the-badge&logo=typescript&logoColor=3178C6" alt="TypeScript">
@@ -49,7 +49,9 @@ status:   work in progress · breaking changes daily · no eta
   <img src="https://img.shields.io/badge/java-161b22?style=for-the-badge&logo=openjdk&logoColor=e6edf3" alt="Java">
   <img src="https://img.shields.io/badge/r-161b22?style=for-the-badge&logo=r&logoColor=276DC3" alt="R">
   <img src="https://img.shields.io/badge/bash-161b22?style=for-the-badge&logo=gnubash&logoColor=4EAA25" alt="Bash">
-  <br><br>
+</p>
+
+<p align="center">
   <code># web</code>
   <br>
   <img src="https://img.shields.io/badge/react-161b22?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
@@ -57,7 +59,9 @@ status:   work in progress · breaking changes daily · no eta
   <img src="https://img.shields.io/badge/html5-161b22?style=for-the-badge&logo=html5&logoColor=E34F26" alt="HTML5">
   <img src="https://img.shields.io/badge/css-161b22?style=for-the-badge&logo=css&logoColor=663399" alt="CSS">
   <img src="https://img.shields.io/badge/markdown-161b22?style=for-the-badge&logo=markdown&logoColor=e6edf3" alt="Markdown">
-  <br><br>
+</p>
+
+<p align="center">
   <code># cloud &amp; devops</code>
   <br>
   <img src="https://img.shields.io/badge/google_cloud-161b22?style=for-the-badge&logo=googlecloud&logoColor=4285F4" alt="Google Cloud">
@@ -66,14 +70,16 @@ status:   work in progress · breaking changes daily · no eta
   <img src="https://img.shields.io/badge/docker-161b22?style=for-the-badge&logo=docker&logoColor=2496ED" alt="Docker">
   <img src="https://img.shields.io/badge/git-161b22?style=for-the-badge&logo=git&logoColor=F05032" alt="Git">
   <img src="https://img.shields.io/badge/github-161b22?style=for-the-badge&logo=github&logoColor=e6edf3" alt="GitHub">
-  <br><br>
+</p>
+
+<p align="center">
   <code># tools &amp; hardware</code>
   <br>
   <img src="https://img.shields.io/badge/arduino-161b22?style=for-the-badge&logo=arduino&logoColor=00878F" alt="Arduino">
   <img src="https://img.shields.io/badge/anaconda-161b22?style=for-the-badge&logo=anaconda&logoColor=44A833" alt="Anaconda">
   <img src="https://img.shields.io/badge/gimp-161b22?style=for-the-badge&logo=gimp&logoColor=e6edf3" alt="GIMP">
   <img src="https://img.shields.io/badge/inkscape-161b22?style=for-the-badge&logo=inkscape&logoColor=e6edf3" alt="Inkscape">
-</div>
+</p>
 
 ### <samp>hafiz@github:~$ cat ~/stats</samp>
 
