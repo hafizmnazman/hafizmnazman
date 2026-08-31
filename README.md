@@ -40,7 +40,7 @@ status:   work in progress · breaking changes daily · no eta
 ### <samp>hafiz@github:~$ cat ~/stack</samp>
 
 <div align="center">
-  <sub><samp>languages</samp></sub>
+  <code># languages</code>
   <br>
   <img src="https://img.shields.io/badge/typescript-161b22?style=for-the-badge&logo=typescript&logoColor=3178C6" alt="TypeScript">
   <img src="https://img.shields.io/badge/javascript-161b22?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
@@ -50,7 +50,7 @@ status:   work in progress · breaking changes daily · no eta
   <img src="https://img.shields.io/badge/r-161b22?style=for-the-badge&logo=r&logoColor=276DC3" alt="R">
   <img src="https://img.shields.io/badge/bash-161b22?style=for-the-badge&logo=gnubash&logoColor=4EAA25" alt="Bash">
   <br><br>
-  <sub><samp>web</samp></sub>
+  <code># web</code>
   <br>
   <img src="https://img.shields.io/badge/react-161b22?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
   <img src="https://img.shields.io/badge/astro-161b22?style=for-the-badge&logo=astro&logoColor=BC52EE" alt="Astro">
@@ -58,7 +58,7 @@ status:   work in progress · breaking changes daily · no eta
   <img src="https://img.shields.io/badge/css-161b22?style=for-the-badge&logo=css&logoColor=663399" alt="CSS">
   <img src="https://img.shields.io/badge/markdown-161b22?style=for-the-badge&logo=markdown&logoColor=e6edf3" alt="Markdown">
   <br><br>
-  <sub><samp>cloud &amp; devops</samp></sub>
+  <code># cloud &amp; devops</code>
   <br>
   <img src="https://img.shields.io/badge/google_cloud-161b22?style=for-the-badge&logo=googlecloud&logoColor=4285F4" alt="Google Cloud">
   <img src="https://img.shields.io/badge/cloudflare-161b22?style=for-the-badge&logo=cloudflare&logoColor=F38020" alt="Cloudflare">
@@ -67,7 +67,7 @@ status:   work in progress · breaking changes daily · no eta
   <img src="https://img.shields.io/badge/git-161b22?style=for-the-badge&logo=git&logoColor=F05032" alt="Git">
   <img src="https://img.shields.io/badge/github-161b22?style=for-the-badge&logo=github&logoColor=e6edf3" alt="GitHub">
   <br><br>
-  <sub><samp>tools &amp; hardware</samp></sub>
+  <code># tools &amp; hardware</code>
   <br>
   <img src="https://img.shields.io/badge/arduino-161b22?style=for-the-badge&logo=arduino&logoColor=00878F" alt="Arduino">
   <img src="https://img.shields.io/badge/anaconda-161b22?style=for-the-badge&logo=anaconda&logoColor=44A833" alt="Anaconda">
