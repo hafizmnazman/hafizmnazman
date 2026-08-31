@@ -40,9 +40,7 @@ building: myself
 status:   work in progress · breaking changes daily · no eta
 ```
 
-```text
-hafiz@github:~$ cat ~/stack
-```
+### <samp>hafiz@github:~$ cat ~/stack</samp>
 
 <p align="center">
   <code># languages</code>
@@ -86,9 +84,7 @@ hafiz@github:~$ cat ~/stack
   <img src="https://img.shields.io/badge/inkscape-161b22?style=for-the-badge&logo=inkscape&logoColor=e6edf3" alt="Inkscape">
 </p>
 
-```text
-hafiz@github:~$ cat ~/stats
-```
+### <samp>hafiz@github:~$ cat ~/stats</samp>
 
 <div align="center">
   <picture>
