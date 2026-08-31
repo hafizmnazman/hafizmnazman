@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 140" width="850" height="140" role="img" aria-label="HAFIZ AZMAN">
+<defs><linearGradient id="ramp" gradientUnits="userSpaceOnUse" x1="0" y1="24" x2="0" y2="116"><stop offset="0" stop-color="#79c0ff"/><stop offset="0.55" stop-color="#4493f8"/><stop offset="1" stop-color="#39c5cf"/></linearGradient></defs>
+<style>text { font-family: ui-monospace,'SFMono-Regular','SF Mono',Menlo,Consolas,'Liberation Mono',monospace; font-size: 14.5px; fill: url(#ramp); white-space: pre; }</style>
+<text x="24" y="38.5" textLength="802" lengthAdjust="spacing" xml:space="preserve">██╗  ██╗  █████╗  ███████╗ ██╗ ███████╗      █████╗  ███████╗ ███╗   ███╗  █████╗  ███╗   ██╗</text>
+<text x="24" y="53.9" textLength="802" lengthAdjust="spacing" xml:space="preserve">██║  ██║ ██╔══██╗ ██╔════╝ ██║ ╚══███╔╝     ██╔══██╗ ╚══███╔╝ ████╗ ████║ ██╔══██╗ ████╗  ██║</text>
+<text x="24" y="69.3" textLength="802" lengthAdjust="spacing" xml:space="preserve">███████║ ███████║ █████╗   ██║   ███╔╝      ███████║   ███╔╝  ██╔████╔██║ ███████║ ██╔██╗ ██║</text>
+<text x="24" y="84.7" textLength="802" lengthAdjust="spacing" xml:space="preserve">██╔══██║ ██╔══██║ ██╔══╝   ██║  ███╔╝       ██╔══██║  ███╔╝   ██║╚██╔╝██║ ██╔══██║ ██║╚██╗██║</text>
+<text x="24" y="100.1" textLength="802" lengthAdjust="spacing" xml:space="preserve">██║  ██║ ██║  ██║ ██║      ██║ ███████╗     ██║  ██║ ███████╗ ██║ ╚═╝ ██║ ██║  ██║ ██║ ╚████║</text>
+<text x="24" y="115.5" textLength="802" lengthAdjust="spacing" xml:space="preserve">╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝      ╚═╝ ╚══════╝     ╚═╝  ╚═╝ ╚══════╝ ╚═╝     ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═══╝</text>
+</svg>

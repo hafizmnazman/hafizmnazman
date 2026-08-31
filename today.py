@@ -5,6 +5,7 @@ Runs daily via GitHub Actions. Standard library only, no pip installs.
 Needs a token in GH_TOKEN (or GITHUB_TOKEN) with read access to all owned
 repos, private included, so the repo split and line counts stay truthful.
 """
+import html
 import json
 import os
 import sys
@@ -21,11 +22,13 @@ TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or ""
 
 def api(path):
     url = path if path.startswith("http") else "https://api.github.com" + path
-    req = urllib.request.Request(url, headers={
-        "Authorization": "Bearer " + TOKEN,
+    headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": USER,
-    })
+    }
+    if TOKEN:
+        headers["Authorization"] = "Bearer " + TOKEN
+    req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=60) as r:
         body = r.read().decode("utf-8")
         return r.status, (json.loads(body) if body.strip() else None)
@@ -59,6 +62,18 @@ def repo_contrib(repo_name, attempts=6):
     print(f"  warning: stats never ready for {repo_name}, counted as 0")
     return 0, 0, 0
 
+
+def all_langs(repos):
+    """Total bytes per language across my non-fork repos."""
+    totals = {}
+    for r in repos:
+        if r.get("fork"):
+            continue
+        _, langs = api(f"/repos/{r['full_name']}/languages")
+        for name, size in (langs or {}).items():
+            totals[name] = totals.get(name, 0) + size
+    return totals
+
 # ------------------------------------------------------------------- helpers
 
 def compact(n):
@@ -89,12 +104,16 @@ THEMES = {
     "dark": {
         "fg": "#e6edf3", "muted": "#8b949e", "accent": "#4493f8", "art": "#e6edf3",
         "pos": "#3fb950", "neg": "#f85149",
+        "bg": "#0d1117", "border": "#30363d",
         "bar": ["#f85149", "#db6d28", "#d29922", "#3fb950", "#39c5cf", "#4493f8", "#ab7df8", "#8b949e"],
+        "langs": ["#4493f8", "#39c5cf", "#3fb950", "#d29922", "#db6d28", "#f85149", "#ab7df8", "#8b949e"],
     },
     "light": {
         "fg": "#1f2328", "muted": "#667085", "accent": "#0969da", "art": "#24292f",
         "pos": "#1a7f37", "neg": "#cf222e",
+        "bg": "#ffffff", "border": "#d0d7de",
         "bar": ["#cf222e", "#bc4c00", "#9a6700", "#1a7f37", "#1b7c83", "#0969da", "#8250df", "#667085"],
+        "langs": ["#0969da", "#1b7c83", "#1a7f37", "#9a6700", "#bc4c00", "#cf222e", "#8250df", "#667085"],
     },
 }
 
@@ -150,6 +169,46 @@ def build(theme, art, groups, sync):
     return "\n".join(p)
 
 
+LANGS_W, LANGS_H = 420, 195
+
+
+def build_langs(theme, totals):
+    """Small self-hosted 'most used languages' card, same look as the big card."""
+    t = THEMES[theme]
+    colors = t["langs"]
+    total_all = sum(totals.values()) or 1
+    ranked = sorted(totals.items(), key=lambda kv: kv[1], reverse=True)
+    top = [kv for kv in ranked if kv[1] / total_all >= 0.005][:8]
+    total = sum(v for _, v in top) or 1
+    p = []
+    p.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {LANGS_W} {LANGS_H}" width="{LANGS_W}" height="{LANGS_H}" role="img" aria-label="Most used languages">')
+    p.append(f"""<style>
+    text {{ font-family: {MONO}; }}
+    .fg  {{ fill: {t['fg']}; font-size: 13px; }}
+    .mut {{ fill: {t['muted']}; font-size: 13px; }}
+    .acc {{ fill: {t['accent']}; font-size: 13px; }}
+    .b   {{ font-weight: 600; }}
+    </style>""")
+    p.append(f'<rect x="0.5" y="0.5" width="{LANGS_W - 1}" height="{LANGS_H - 1}" rx="6" fill="{t["bg"]}" stroke="{t["border"]}"/>')
+    p.append('<text x="20" y="30" xml:space="preserve"><tspan class="acc b">hafiz@github</tspan><tspan class="mut">:~$</tspan><tspan class="fg"> tokei</tspan></text>')
+    bar_x, bar_y, bar_w, bar_h = 20, 46, LANGS_W - 40, 10
+    p.append(f'<clipPath id="bar"><rect x="{bar_x}" y="{bar_y}" width="{bar_w}" height="{bar_h}" rx="5"/></clipPath>')
+    x = float(bar_x)
+    for i, (_, size) in enumerate(top):
+        w = bar_w * size / total
+        p.append(f'<rect clip-path="url(#bar)" x="{x:.1f}" y="{bar_y}" width="{w + 1:.1f}" height="{bar_h}" fill="{colors[i]}"/>')
+        x += w
+    for i, (name, size) in enumerate(top):
+        col, row = i % 2, i // 2
+        lx = 20 + col * 200
+        ly = 86 + row * 27
+        pct = 100 * size / total
+        p.append(f'<circle cx="{lx + 4}" cy="{ly - 4.5}" r="4.5" fill="{colors[i]}"/>')
+        p.append(f'<text x="{lx + 17}" y="{ly}"><tspan class="fg">{html.escape(name.lower())}</tspan><tspan class="mut"> {pct:.1f}%</tspan></text>')
+    p.append("</svg>")
+    return "\n".join(p)
+
+
 def main():
     if not TOKEN:
         print("no token in GH_TOKEN or GITHUB_TOKEN, refusing to write stale stats")
@@ -168,6 +227,9 @@ def main():
     if not priv:
         print("warning: token sees no private repos, counts would be wrong, aborting")
         return 1
+
+    print(f"summing languages across {len(repos)} repos ...")
+    totals = all_langs(repos)
 
     print(f"summing contributions across {len(repos)} repos ...")
     tot_a = tot_d = tot_c = 0
@@ -214,6 +276,9 @@ def main():
         svg = build(theme, art, groups, sync)
         (ROOT / f"{theme}_mode.svg").write_text(svg, encoding="utf-8", newline="\n")
         print(f"wrote {theme}_mode.svg")
+        langs_svg = build_langs(theme, totals)
+        (ROOT / f"langs_{theme}.svg").write_text(langs_svg, encoding="utf-8", newline="\n")
+        print(f"wrote langs_{theme}.svg")
     return 0
 
 
