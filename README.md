@@ -18,15 +18,18 @@
   </a>
 </div>
 
-<div align="center">
+<p align="center">
   <a href="https://hafizazman.com"><img src="https://img.shields.io/badge/portfolio-hafizazman.com-4493f8?style=for-the-badge&labelColor=161b22" alt="portfolio"></a>
   <a href="https://hafizbuilds.me"><img src="https://img.shields.io/badge/builds-hafizbuilds.me-39c5cf?style=for-the-badge&labelColor=161b22" alt="builds"></a>
   <a href="https://www.linkedin.com/in/hafizmnazman"><img src="https://img.shields.io/badge/linkedin-in%2Fhafizmnazman-0a66c2?style=for-the-badge&labelColor=161b22" alt="linkedin"></a>
+</p>
+
+<p align="center">
   <a href="https://x.com/hafizmnazman"><img src="https://img.shields.io/badge/x-%40hafizmnazman-e6edf3?style=for-the-badge&labelColor=161b22&logo=x&logoColor=white" alt="x"></a>
   <a href="https://www.instagram.com/hafizmnazman"><img src="https://img.shields.io/badge/instagram-%40hafizmnazman-ab7df8?style=for-the-badge&labelColor=161b22&logo=instagram&logoColor=white" alt="instagram"></a>
   <!-- TODO: swap # for https://discord.com/users/<your numeric user id> -->
   <a href="#"><img src="https://img.shields.io/badge/discord-%40hafizmnazman-5865f2?style=for-the-badge&labelColor=161b22&logo=discord&logoColor=white" alt="discord"></a>
-</div>
+</p>
 
 ```text
 hafiz@github:~$ ls ~/projects
@@ -37,7 +40,9 @@ building: myself
 status:   work in progress · breaking changes daily · no eta
 ```
 
-### <samp>hafiz@github:~$ cat ~/stack</samp>
+```text
+hafiz@github:~$ cat ~/stack
+```
 
 <p align="center">
   <code># languages</code>
@@ -81,7 +86,9 @@ status:   work in progress · breaking changes daily · no eta
   <img src="https://img.shields.io/badge/inkscape-161b22?style=for-the-badge&logo=inkscape&logoColor=e6edf3" alt="Inkscape">
 </p>
 
-### <samp>hafiz@github:~$ cat ~/stats</samp>
+```text
+hafiz@github:~$ cat ~/stats
+```
 
 <div align="center">
   <picture>
