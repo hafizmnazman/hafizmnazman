@@ -118,7 +118,8 @@ THEMES = {
 }
 
 TAGLINE = "your friendly neighbourhood developer"
-W, H = 850, 540
+W, H = 850, 508
+GROUP_GAP = 40  # two groups now; wider gaps keep the column balanced with the art
 ART_X, ART_Y0, ART_LEN, ART_FS = 24, 78, 405, 13.5
 ART_LH = 17.9
 LBL_X, VAL_X = 460, 566
@@ -160,7 +161,7 @@ def build(theme, art, groups, sync):
                 suffix = ""
             p.append(f'<text class="fg" x="{VAL_X}" y="{y}" xml:space="preserve"><tspan class="acc" x="{LBL_X}">{k}</tspan><tspan x="{VAL_X}">{v}</tspan>{suffix}</text>')
             y += 20
-        y += 8
+        y += GROUP_GAP
     y -= 4
     for i, c in enumerate(t["bar"]):
         p.append(f'<rect x="{LBL_X + i * 22}" y="{y - 10}" width="16" height="10" rx="2" fill="{c}"/>')
@@ -252,13 +253,6 @@ def main():
             ("keyboard", "rk m75", ""),
             ("headphones", "sony ult wear", ""),
             ("printer", "bambu lab x2d", ""),
-        ],
-        [
-            ("linkedin", "in/hafizmnazman", ""),
-            ("instagram", "@hafizmnazman", ""),
-            ("discord", "@hafizmnazman", ""),
-            ("portfolio", "hafizazman.com", ""),
-            ("builds", "hafizbuilds.me", ""),
         ],
         [
             ("repos", f"{len(pub)} public · {len(priv)} private", ""),
