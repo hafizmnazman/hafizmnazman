@@ -9,9 +9,9 @@
 <rect x="0.5" y="0.5" width="419" height="194" rx="6" fill="#ffffff" stroke="#d0d7de"/>
 <text x="20" y="30" xml:space="preserve"><tspan class="acc b">hafiz@github</tspan><tspan class="mut">:~$</tspan><tspan class="fg"> tokei</tspan></text>
 <clipPath id="bar"><rect x="20" y="46" width="380" height="10" rx="5"/></clipPath>
-<rect clip-path="url(#bar)" x="20.0" y="46" width="142.4" height="10" fill="#0969da"/>
-<rect clip-path="url(#bar)" x="161.4" y="46" width="112.1" height="10" fill="#1b7c83"/>
-<rect clip-path="url(#bar)" x="272.5" y="46" width="64.6" height="10" fill="#1a7f37"/>
+<rect clip-path="url(#bar)" x="20.0" y="46" width="142.2" height="10" fill="#0969da"/>
+<rect clip-path="url(#bar)" x="161.2" y="46" width="112.0" height="10" fill="#1b7c83"/>
+<rect clip-path="url(#bar)" x="272.3" y="46" width="64.9" height="10" fill="#1a7f37"/>
 <rect clip-path="url(#bar)" x="336.1" y="46" width="21.4" height="10" fill="#9a6700"/>
 <rect clip-path="url(#bar)" x="356.5" y="46" width="16.5" height="10" fill="#bc4c00"/>
 <rect clip-path="url(#bar)" x="372.0" y="46" width="14.8" height="10" fill="#cf222e"/>
@@ -22,7 +22,7 @@
 <circle cx="224" cy="81.5" r="4.5" fill="#1b7c83"/>
 <text x="237" y="86"><tspan class="fg">html</tspan><tspan class="mut"> 29.2%</tspan></text>
 <circle cx="24" cy="108.5" r="4.5" fill="#1a7f37"/>
-<text x="37" y="113"><tspan class="fg">python</tspan><tspan class="mut"> 16.7%</tspan></text>
+<text x="37" y="113"><tspan class="fg">python</tspan><tspan class="mut"> 16.8%</tspan></text>
 <circle cx="224" cy="108.5" r="4.5" fill="#9a6700"/>
 <text x="237" y="113"><tspan class="fg">javascript</tspan><tspan class="mut"> 5.4%</tspan></text>
 <circle cx="24" cy="135.5" r="4.5" fill="#bc4c00"/>
