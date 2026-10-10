@@ -15,6 +15,8 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 USER = "hafizmnazman"
+# Left out of every count: contribution graph art, not work.
+SKIP = {"conteng"}
 ROOT = Path(__file__).parent
 TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or ""
 
@@ -221,7 +223,7 @@ def main():
     created = datetime.fromisoformat(me["created_at"].replace("Z", "+00:00"))
 
     print("fetching repos ...")
-    repos = all_repos()
+    repos = [r for r in all_repos() if r["name"] not in SKIP]
     pub = [r for r in repos if not r["private"]]
     priv = [r for r in repos if r["private"]]
     stars = sum(r["stargazers_count"] for r in pub)
