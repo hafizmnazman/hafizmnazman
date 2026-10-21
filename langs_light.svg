@@ -9,28 +9,28 @@
 <rect x="0.5" y="0.5" width="419" height="194" rx="6" fill="#ffffff" stroke="#d0d7de"/>
 <text x="20" y="30" xml:space="preserve"><tspan class="acc b">hafiz@github</tspan><tspan class="mut">:~$</tspan><tspan class="fg"> tokei</tspan></text>
 <clipPath id="bar"><rect x="20" y="46" width="380" height="10" rx="5"/></clipPath>
-<rect clip-path="url(#bar)" x="20.0" y="46" width="138.6" height="10" fill="#0969da"/>
-<rect clip-path="url(#bar)" x="157.6" y="46" width="81.5" height="10" fill="#1b7c83"/>
-<rect clip-path="url(#bar)" x="238.1" y="46" width="49.7" height="10" fill="#1a7f37"/>
-<rect clip-path="url(#bar)" x="286.8" y="46" width="43.6" height="10" fill="#9a6700"/>
-<rect clip-path="url(#bar)" x="329.4" y="46" width="32.6" height="10" fill="#bc4c00"/>
-<rect clip-path="url(#bar)" x="361.0" y="46" width="19.4" height="10" fill="#cf222e"/>
-<rect clip-path="url(#bar)" x="379.4" y="46" width="14.9" height="10" fill="#8250df"/>
-<rect clip-path="url(#bar)" x="393.3" y="46" width="7.7" height="10" fill="#667085"/>
+<rect clip-path="url(#bar)" x="20.0" y="46" width="136.9" height="10" fill="#0969da"/>
+<rect clip-path="url(#bar)" x="155.9" y="46" width="91.3" height="10" fill="#1b7c83"/>
+<rect clip-path="url(#bar)" x="246.2" y="46" width="47.2" height="10" fill="#1a7f37"/>
+<rect clip-path="url(#bar)" x="292.4" y="46" width="41.5" height="10" fill="#9a6700"/>
+<rect clip-path="url(#bar)" x="332.9" y="46" width="31.0" height="10" fill="#bc4c00"/>
+<rect clip-path="url(#bar)" x="362.9" y="46" width="18.5" height="10" fill="#cf222e"/>
+<rect clip-path="url(#bar)" x="380.3" y="46" width="14.3" height="10" fill="#8250df"/>
+<rect clip-path="url(#bar)" x="393.6" y="46" width="7.4" height="10" fill="#667085"/>
 <circle cx="24" cy="81.5" r="4.5" fill="#0969da"/>
-<text x="37" y="86"><tspan class="fg">typescript</tspan><tspan class="mut"> 36.2%</tspan></text>
+<text x="37" y="86"><tspan class="fg">typescript</tspan><tspan class="mut"> 35.8%</tspan></text>
 <circle cx="224" cy="81.5" r="4.5" fill="#1b7c83"/>
-<text x="237" y="86"><tspan class="fg">python</tspan><tspan class="mut"> 21.2%</tspan></text>
+<text x="237" y="86"><tspan class="fg">python</tspan><tspan class="mut"> 23.8%</tspan></text>
 <circle cx="24" cy="108.5" r="4.5" fill="#1a7f37"/>
-<text x="37" y="113"><tspan class="fg">html</tspan><tspan class="mut"> 12.8%</tspan></text>
+<text x="37" y="113"><tspan class="fg">html</tspan><tspan class="mut"> 12.2%</tspan></text>
 <circle cx="224" cy="108.5" r="4.5" fill="#9a6700"/>
-<text x="237" y="113"><tspan class="fg">javascript</tspan><tspan class="mut"> 11.2%</tspan></text>
+<text x="237" y="113"><tspan class="fg">javascript</tspan><tspan class="mut"> 10.7%</tspan></text>
 <circle cx="24" cy="135.5" r="4.5" fill="#bc4c00"/>
-<text x="37" y="140"><tspan class="fg">jupyter notebook</tspan><tspan class="mut"> 8.3%</tspan></text>
+<text x="37" y="140"><tspan class="fg">jupyter notebook</tspan><tspan class="mut"> 7.9%</tspan></text>
 <circle cx="224" cy="135.5" r="4.5" fill="#cf222e"/>
-<text x="237" y="140"><tspan class="fg">mdx</tspan><tspan class="mut"> 4.8%</tspan></text>
+<text x="237" y="140"><tspan class="fg">mdx</tspan><tspan class="mut"> 4.6%</tspan></text>
 <circle cx="24" cy="162.5" r="4.5" fill="#8250df"/>
-<text x="37" y="167"><tspan class="fg">css</tspan><tspan class="mut"> 3.7%</tspan></text>
+<text x="37" y="167"><tspan class="fg">css</tspan><tspan class="mut"> 3.5%</tspan></text>
 <circle cx="224" cy="162.5" r="4.5" fill="#667085"/>
-<text x="237" y="167"><tspan class="fg">astro</tspan><tspan class="mut"> 1.8%</tspan></text>
+<text x="237" y="167"><tspan class="fg">astro</tspan><tspan class="mut"> 1.7%</tspan></text>
 </svg>
